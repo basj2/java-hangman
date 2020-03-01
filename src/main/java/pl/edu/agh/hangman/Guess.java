@@ -3,12 +3,14 @@ package pl.edu.agh.hangman;
 import java.util.Scanner;
 
 public class Guess {
-	public String guessLetter(){
+	public char guessLetter(){
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Guess:");
-		String guess = scanner.next();
+		String letter = scanner.next();
+		letter = letter.toUpperCase();
+		char charLetter = letter.charAt(0);
 		scanner.close();
-		return guess.toUpperCase();
+		return charLetter;
 		
 	}
 		
