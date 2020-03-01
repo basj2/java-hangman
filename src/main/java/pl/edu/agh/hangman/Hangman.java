@@ -60,7 +60,7 @@ public class Hangman {
 
     public static void main(String[] args) throws FileNotFoundException {
         Guess letterToGuess = new Guess();
-        String letter = letterToGuess.guessLetter();
+        char letter = letterToGuess.guessLetter();
         System.out.println(letter); 
 
     	WordsReader wordsReader = new WordsReader();
@@ -74,6 +74,13 @@ public class Hangman {
     	UnderscoreCreator underscoreCreator = new UnderscoreCreator();
     	String underscores = underscoreCreator.getUnderscores(word);
     	System.out.println(underscores);
+    	
+    	CheckLetter checkLetter = new CheckLetter();
+    	boolean hasLetter = checkLetter.checkLetter(word, letter);
+    	System.out.println (hasLetter);
+    	
+    	
+    	
     	
 
     }
