@@ -7,10 +7,6 @@ import java.util.Scanner;
 
 public class WordsReader {
 	
-	//private String filePath;
-	
-	//private ArrayList<String> wordsList;
-	
 	public ArrayList<String> getWordsList(String file) throws FileNotFoundException{
 		ArrayList<String> wordsList = new ArrayList<>();
 		File wordsFile = new File(file);
