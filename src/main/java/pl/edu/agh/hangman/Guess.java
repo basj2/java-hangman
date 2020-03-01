@@ -9,7 +9,7 @@ public class Guess {
 		String letter = scanner.next();
 		letter = letter.toUpperCase();
 		char charLetter = letter.charAt(0);
-		scanner.close();
+		//scanner.close();
 		return charLetter;
 		
 	}
