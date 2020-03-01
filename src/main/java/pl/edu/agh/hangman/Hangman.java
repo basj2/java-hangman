@@ -55,5 +55,9 @@ public class Hangman {
     };
 
     public static void main(String[] args) {
+    	
+    	Guess letterToGuess = new Guess();
+    	String letter = letterToGuess.guessLetter();
+    	System.out.println(letter);
     }
 }
