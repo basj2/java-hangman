@@ -63,13 +63,17 @@ public class Hangman {
         char letter = letterToGuess.guessLetter();
         System.out.println(letter); 
 
-    	WordsReader wordsReader = new WordsReader();
+
+       	WordsReader wordsReader = new WordsReader();
     	ArrayList<String> wordsList = wordsReader.getWordsList("src/main/resources/slowa.txt");
-		System.out.println(wordsList.toString());
+		System.out.println(wordsList.toString());		
 
     	RandomWord random = new RandomWord();
     	String word = random.getRandomWord(wordsList);
     	System.out.println(word);
+    	
+    	int picturesNumber = HANGMANPICS.length();
+    	counter = 0;
     	
     	UnderscoreCreator underscoreCreator = new UnderscoreCreator();
     	String underscores = underscoreCreator.getUnderscores(word);
