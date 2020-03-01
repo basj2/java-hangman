@@ -75,7 +75,7 @@ public class Hangman {
     	String underscores = underscoreCreator.getUnderscores(word);
     	System.out.println(underscores);
     	
-    	char letter = 'A';
+    	//char letter = 'A';
     	UnderscoreToLetter underscoreToLetter = new UnderscoreToLetter();
     	String underscore = underscoreToLetter.underscoreToLetter(word, underscores, letter);
     	System.out.println(underscore);
