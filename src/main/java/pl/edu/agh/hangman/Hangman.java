@@ -79,8 +79,9 @@ public class Hangman {
     	boolean hasLetter = checkLetter.checkLetter(word, letter);
     	System.out.println (hasLetter);
     	
-    	
-    	
+    	UnderscoreToLetter underscoreToLetter = new UnderscoreToLetter();
+    	String underscore = underscoreToLetter.underscoreToLetter(word, underscores, letter);
+    	System.out.println(underscore);
     	
 
     }
