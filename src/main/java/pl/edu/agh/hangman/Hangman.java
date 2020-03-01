@@ -60,6 +60,13 @@ public class Hangman {
     public static void main(String[] args) throws FileNotFoundException {
     	WordsReader wordsReader = new WordsReader();
     	ArrayList<String> wordsList = wordsReader.getWordsList("src/main/resources/slowa.txt");
-    	System.out.println(wordsList.toString());
+    	//System.out.println(wordsList.toString());
+    	RandomWord random = new RandomWord();
+    	String word = random.getRandomWord(wordsList);
+    	System.out.println(word);
+    	
+    	UnderscoreCreator underscoreCreator = new UnderscoreCreator();
+    	String underscores = underscoreCreator.getUnderscores(word);
+    	System.out.println(underscores);
     }
 }
